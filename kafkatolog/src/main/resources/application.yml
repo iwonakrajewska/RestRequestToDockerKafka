@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input-source:
+          destination: kafka_test_topic
+        input:
+          destination: kafka_test_topic
+        output:
+          destination: maskedOutput
+        output-sink:
+          destination: maskedOutput
